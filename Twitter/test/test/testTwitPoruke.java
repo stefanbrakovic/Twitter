@@ -1,27 +1,42 @@
 package test;
 
+import com.twitter.poruke.TwiterPoruka;
+
 import junit.framework.TestCase;
 
 public class testTwitPoruke extends TestCase {
 
-	public void testGetKorisnik() {
-		fail("Not yet implemented"); // TODO
+	TwiterPoruka tp;
+	
+	
+	public void setUp()throws Exception{
+	 tp = new TwiterPoruka();
 	}
-
+	
+	
+	public void tearDown() throws Exception{
+		tp = null;
+	}
+	
 	public void testSetKorisnik() {
-		fail("Not yet implemented"); // TODO
-	}
-
-	public void testGetPoruka() {
-		fail("Not yet implemented"); // TODO
-	}
-
+		tp.setKorisnik("Stefan");
+		
+		assertEquals("Stefan", tp.getKorisnik());
+	}	
+	//(expected = java.lang.RuntimeException.class)
 	public void testSetPoruka() {
-		fail("Not yet implemented"); // TODO
+		tp.setPoruka("123321asdDSA");
+		
+		assertEquals("123321asdDSA", tp.getPoruka());
+		
 	}
 
 	public void testToString() {
-		fail("Not yet implemented"); // TODO
+		tp.setKorisnik("Stefan");
+		tp.setPoruka("ASD");
+		
+		assertEquals("KORISNIK:Stefan PORUKA:ASD", tp.toString());
+		
 	}
 
 }

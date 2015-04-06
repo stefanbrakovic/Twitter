@@ -2,7 +2,16 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="test"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.1%Foundation-1.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
+	<classpathentry kind="lib" path="F:/Users/Stefan/Documents/eclipse/plugins/org.junit_4.11.0.v201303080030/junit.jar" sourcepath="F:/Users/Stefan/Documents/eclipse/plugins/org.junit.source_4.11.0.v201303080030.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://junit.sourceforge.net/junit3.8.1/javadoc/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="junit/"/>
+			<accessrule kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
